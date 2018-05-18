@@ -17,18 +17,24 @@
       
       <% for (var i = 0; i < movies.length; i++) { %>
       <div class="poster">
-        <img src="/images/<%= movies[i].poster %>" class="img-responsive">
 
-        <div class="poster-info-overlay">
-            <h3><%= movies[i].title %></h3>
-            <h4>View More <i class="fa fa-arrow-right"></i></h4>
-        </div>
+        <a href="/star_wars_episode/<%= movies[i].episode_number%>">
+
+          <img src="/images/<%= movies[i].poster %>" class="img-responsive">
+
+          <div class="poster-info-overlay">
+              <h3><%= movies[i].title %></h3>
+              <h4>View More <i class="fa fa-arrow-right"></i></h4>
+          </div>
+
+        </a>
 
       </div>
       <% } %>
 
     </div>
 
+    <% include partials/footer.ejs %>
     
     <% include partials/script.ejs %>
   </body>
