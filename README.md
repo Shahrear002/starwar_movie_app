@@ -1,2 +1,2 @@
 # starwar_movie_app
-A basic app for star war movie fans
+A basic app for star war movie fans using nodeJS
